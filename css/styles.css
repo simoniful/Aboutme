@@ -52,15 +52,6 @@ html {
 -ms-text-size-adjust:100%
 }
 
-body {
-margin:0 auto;
-display:block;
-font-family:Helvetica,verdana,Arial,sans-serif;
-font-style:normal;
-color:#343434;
-font-size:13px;
-}
-
 img {
 max-width:100%
 }
@@ -69,90 +60,90 @@ max-width:100%
 clear:both
 }
 
+body {
+  margin: 0 auto;
+  display: block;
+  font-family: 'Helvetica', verdana,Arial, sans-serif;
+  font-style:normal;
+  color:#343434;
+  font-size:13px;
+  }
+
 .the-navbar .literal {
   padding-right: 5px;
 }
 
 .the-image-area {
-position:fixed;
-top:0;
-margin:0 auto;
-display:block;
-color:#009788;
-text-align:center;
-background:#efefef;
-width:100%;
-border-bottom:1px solid #000;
-z-index: 5;
+  position: fixed;
+  top: 0;
+  margin: 0 auto;
+  display: block;
+  color: #009788;
+  text-align: center;
+  background: #efefef;
+  width: 100%;
+  border-bottom: 1px solid #000;
+  z-index: 5;
 }
 
 .the-image-area img {
-margin:0 auto;
-padding:0;
-margin-bottom:-5px; height:100%;
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: -5px;
+  height: 100%;
 }
 
 .blank {
-height: 220px;
+  height: 220px;
 }
 
 .quote-area {
-margin:30px auto;
-border:1px dashed #dcdde1;
-text-align:center;
-max-width:500px
+  margin: 30px auto;
+  border: 1px dashed #dcdde1;
+  text-align: center;
+  max-width: 500px
 }
 
-.quote-area span:hover, .to-home span:hover{
-  background:linear-gradient(to top, #ffe400 10%, transparent 50%);;
+.quote-area span:hover,
+.to-home span:hover {
+  background: linear-gradient(to top, #ffe400 10%, transparent 50%);
+  ;
 }
 
 .quote-title {
-margin:0 auto;
-display:block;
-text-align:center;
-color:#333;
-font-size:22px;
-text-transform:uppercase;
-padding:8px;
-margin:8px;
-font-weight:700;
-text-decoration: underline;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  color: #333;
+  font-size: 22px;
+  text-transform: uppercase;
+  padding: 8px;
+  margin: 8px;
+  font-weight: 700;
+  text-decoration: underline;
 }
 
 .quote-text {
-display:block;
-color:#888;
-font-weight:normal;
-font-family:Georgia,times,serif;
-font-size:18px;
-padding:8px;
-margin:8px;
-width:auto;
-line-height: 1.6em;
-overflow: hidden;
+  display: block;
+  color: #888;
+  font-weight: normal;
+  font-family: 'Georgia', times, serif;
+  font-size: 18px;
+  padding: 8px;
+  margin: 8px;
+  width: auto;
+  line-height: 1.6em;
+  overflow: hidden;
 }
 
 .quote-text img {
-  -webkit-transform:scale(1);
-  -moz-transform:scale(1);
-  -ms-transform:scale(1); 
-  -o-transform:scale(1);  
-  transform:scale(1);
-  -webkit-transition:.3s;
-  -moz-transition:.3s;
-  -ms-transition:.3s;
-  -o-transition:.3s;
-  transition:.3s;
+  transform: scale(1);
+  transition: .3s;
   margin-bottom: -5px;
 }
 
 .quote-text img:hover {
-  -webkit-transform:scale(1.1);
-  -moz-transform:scale(1.1);
-  -ms-transform:scale(1.1);   
-  -o-transform:scale(1.1);
-  transform:scale(1.1);
+  transform: scale(1.1);
 }
 
 figure.expansion_effect {
@@ -170,17 +161,20 @@ figure.expansion_effect {
   line-height: 100%;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
 }
+
 figure.expansion_effect * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-transition: all 0.45s ease-in-out;
   transition: all 0.45s ease-in-out;
 }
+
 figure.expansion_effect img {
   position: relative;
   opacity: 0.9;
   object-fit: cover;
 }
+
 figure.expansion_effect figcaption {
   position: absolute;
   top: 45%;
@@ -190,6 +184,7 @@ figure.expansion_effect figcaption {
   border: 1px solid white;
   border-width: 1px 1px 0;
 }
+
 figure.expansion_effect .heading {
   overflow: hidden;
   -webkit-transform: translateY(50%);
@@ -198,6 +193,7 @@ figure.expansion_effect .heading {
   bottom: 0;
   width: 100%;
 }
+
 figure.expansion_effect h3 {
   display: table;
   margin: 0 auto;
@@ -208,9 +204,11 @@ figure.expansion_effect h3 {
   text-transform: uppercase;
   font-weight: 400;
 }
+
 figure.expansion_effect h3 span {
   font-weight: 800;
 }
+
 figure.expansion_effect h3:before,
 figure.expansion_effect h3:after {
   position: absolute;
@@ -221,12 +219,15 @@ figure.expansion_effect h3:after {
   background: white;
   top: 50%;
 }
+
 figure.expansion_effect h3:before {
   left: -1000%;
 }
+
 figure.expansion_effect h3:after {
   right: -1000%;
 }
+
 figure.expansion_effect p {
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -239,6 +240,7 @@ figure.expansion_effect p {
   line-height: 1.8em;
   font-size: 1em;
 }
+
 figure.expansion_effect a {
   left: 0;
   right: 0;
@@ -247,17 +249,20 @@ figure.expansion_effect a {
   position: absolute;
   z-index: 1;
 }
+
 figure.expansion_effect:hover img,
 figure.expansion_effect.hover img {
   opacity: 0.25;
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
+
 figure.expansion_effect:hover figcaption,
 figure.expansion_effect.hover figcaption {
   top: 7%;
   bottom: 7%;
 }
+
 figure.expansion_effect:hover p,
 figure.expansion_effect.hover p {
   opacity: 1;
@@ -389,62 +394,61 @@ figure.focus_effect.hover img {
 }
 
 .footnote {
-margin:0 auto;
-display:block;
-text-align:center;
-color:#bcbcbc;
-font-family:Helvetica,verdana,arial,sans-serif;
-font-size:14px;
-padding:8px;
-margin:8px;
-width:auto;
-line-height:130%
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  color: #bcbcbc;
+  font-family: Helvetica, verdana, arial, sans-serif;
+  font-size: 14px;
+  padding: 8px;
+  margin: 8px;
+  width: auto;
+  line-height: 130%
 }
 
 A:link {
-text-decoration:none;
-color:#888
+  text-decoration: none;
+  color: #888
 }
 
 A:visited {
-text-decoration:none;
-color:#888
-} 
+  text-decoration: none;
+  color: #888
+}
 
 A:active {
-text-decoration:none;
-color:#000;
+  text-decoration: none;
+  color: #000;
 }
 
 A:hover {
-text-decoration:none;
-color:#000;
+  text-decoration: none;
+  color: #000;
 }
 
 .the-navbar {
-display:block;
-color:#888;
-text-align:center;
-background:#000;
-width:100%;
-font-size:14px;
+  display: block;
+  color: #888;
+  text-align: center;
+  background: #000;
+  width: 100%;
+  font-size: 14px;
 }
 
-.the-navbar a{
-display:inline-block;
-color:#fff;
-background:#000;
-padding:4px;
+.the-navbar a {
+  display: inline-block;
+  color: #fff;
+  background: #000;
+  padding: 4px;
 }
 
 .motiv_wrap {
-  margin:25px auto;
+  margin: 25px auto;
 }
 
 .to-home {
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  padding-bottom:30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
 }
-
