@@ -6,7 +6,19 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
 		<link href="css/styles.css" rel="stylesheet" type="text/css">
 		<link rel="icon" href="./images/favicon.ico">
-		<link rel="apple-touch-icon" href="./images/favicon.ico">
+		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+		<script>
+			WebFont.load({ 
+				google: {
+					families: ['Hind']
+				},
+				custom: {
+					families: ['Nanum Gothic'],
+					urls: ['http://fonts.googleapis.com/earlyaccess/nanumgothic.css']
+				}  
+			});
+		</script>
+		<script src="app.js"></script>
 	</head>
 	<body>
 		<header class="the-image-area">
@@ -18,18 +30,19 @@
 				<a href="N.html" target="_self"><span>N</span></a>
 			</nav>
 			<img src="images/M.png">
+			<div id="_progress"></div>
 		</header>
 
 		<div class="blank"></div>
 		<main>
-			<section class="quote-area">
+			<section class="quote-area up-on-scroll">
 				<h2 class="quote-title">
 					Motivation
 				</h2>
 				<article class="quote-text">
 					<section class="motiv_wrap">
 						<a href="https://www.youtube.com/channel/UCdeWxKJuvtUG2xyN6pOJEvA">
-							<img src="./images/image7.jpg" alt="Jong-min Kim">
+							<img src="./images/inter.png" alt="Jong-min Kim">
 						</a>
 						<div>
 							<span>Jong-min Kim</span>
@@ -37,7 +50,7 @@
 					</section>
 					<section class="motiv_wrap">
 						<a href="https://noritake.org/">
-							<img src="./images/image9.jpg" alt="Noritake">
+							<img src="./images/nori.png" alt="Noritake">
 						</a>
 						<div>
 							<span>Noritake</span>
@@ -54,7 +67,7 @@
 				</article>
 			</section>
 
-			<section class="quote-area">
+			<section class="quote-area up-on-scroll">
 				<h2 class="quote-title">
 					Chracter
 				</h2>
@@ -63,7 +76,7 @@
 						<img src="./images/bay.jpg" alt="Big Hero Baymax">
 						<figcaption>
 						  <div class="heading">
-							<h3><span>Baymax</span></h3>
+							<h3>Baymax</h3>
 						  </div>
 						  <div class="caption">
 							<p>Big Hero</p>
@@ -76,7 +89,7 @@
 						<img src="./images/sid.jpg" alt="Skins sid">
 						<figcaption>
 						  <div class="heading">
-							<h3><span>Sid</span></h3>
+							<h3>Sid</h3>
 						  </div>
 						  <div class="caption">
 							<p>Skins</p>
@@ -89,7 +102,7 @@
 						<img src="./images/gen.jpg" alt="We Married as a Job Hiramasa">
 						<figcaption>
 						  <div class="heading">
-							<h3><span>Hiramasa</span></h3>
+							<h3>Hiramasa</h3>
 						  </div>
 						  <div class="caption">
 							<p>도망치는건 부끄럽지만 도움이 된다</p>
@@ -100,19 +113,19 @@
 				</article>
 			</section>
 
-			<section class="quote-area">
+			<section class="quote-area up-on-scroll">
 				<h2 class="quote-title">
 					MBTI
 				</h2>
 				<article class="quote-text">
 					<img src="./images/MBTI.png" alt="MBTI - ENFJ-A/ENFJ-T">
-					<div>
-						<span>ENFJ - A</span>
+					<div class="mbti_wrap">
+						<span class="mbti_title">ENFJ - A</span>
 					</div>
 				</article>
 			</section>
 
-			<section class="quote-area">
+			<section class="quote-area up-on-scroll">
 				<h2 class="quote-title">
 					Like
 				</h2>
@@ -121,7 +134,7 @@
 						<img src="./images/netflix.jpg" alt="netflix">
 						<figcaption>
 						  <div class="heading">
-							<h3><span>💥</span></h3>
+							<h3>💥</h3>
 						  </div>
 						  <div class="caption">
 							<p>Netflix</p>
@@ -134,7 +147,7 @@
 						<img src="./images/coke.jpg" alt="coke">
 						<figcaption>
 						  <div class="heading">
-							<h3><span>🥤</span></h3>
+							<h3>🥤</h3>
 						  </div>
 						  <div class="caption">
 							<p>Coke</p>
@@ -147,7 +160,7 @@
 						<img src="./images/burger.jpg" alt="burger">
 						<figcaption>
 						  <div class="heading">
-							<h3><span>🍔</span></h3>
+							<h3>🍔</h3>
 						  </div>
 						  <div class="caption">
 							<p>Burger</p>
@@ -160,18 +173,8 @@
 		</main>
 		<footer class="to-home">
 			<a href="index.html" target="_self"><span>HOME</span></a>
+			<br>
+			<input class="night_btn" type="button" value="Night" onclick="nightDayHandler(this)">
 		</footer>
-
-		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js">
-			WebFont.load({ 
-					google: {
-					families: ['Droid Sans', 'Droid Serif']
-					},
-					custom: {
-						families: ['Nanum Gothic'],
-						urls: ['http://fonts.googleapis.com/earlyaccess/nanumgothic.css']
-					}  
-			});
-		</script>
 	</body>
 </html>

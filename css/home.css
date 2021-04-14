@@ -1,3 +1,5 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto+Mono:100';
+
 body,html,div,span,h1,h2,h3,h4,h5,h6,p,ul,ol,li,blockquote,form,input {
 margin:0;
 padding:0;
@@ -75,9 +77,15 @@ color:#000;
 margin:0 auto; padding: 5px 0px; height: 15%;
 display:block;
 text-align:center;
-background:#efefef;
 width: 100%;
 border-bottom:1px solid #ced6e0;
+}
+
+.alpha {
+font-size:180px;
+color: #c23616;
+vertical-align: sub;
+
 }
 
 .the-home-images-area img {
@@ -106,4 +114,22 @@ line-height: 180%;
 position: absolute;
 bottom: 0;
 border-bottom:0px solid #ced6e0;
+}
+
+.night_btn {
+color: #888;
+}
+
+html, body {
+  font-family:'Roboto Mono', monospace;
+}
+
+.text {
+  font-weight: 100;
+  font-size: 28px;
+  color: #333;
+}
+
+.dud {
+  color: #888;
 }

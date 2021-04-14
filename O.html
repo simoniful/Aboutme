@@ -7,6 +7,19 @@
 		<link href="css/styles.css" rel="stylesheet" type="text/css">
 		<link rel="icon" href="./images/favicon.ico">
 		<link rel="apple-touch-icon" href="./images/favicon.ico">
+		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+		<script>
+			WebFont.load({ 
+				google: {
+					families: ['Droid Sans', 'Droid Serif']
+				},
+				custom: {
+					families: ['Nanum Gothic'],
+					urls: ['http://fonts.googleapis.com/earlyaccess/nanumgothic.css']
+				}  
+			});
+		</script>
+		<script src="app.js"></script>
 	</head>
 	<body>
 		<header class="the-image-area">
@@ -18,11 +31,15 @@
 				<a href="N.html" target="_self"><span>N</span></a>
 			</nav>
 			<img src="images/O.png">
+			<div id="_progress"></div>
 		</header>
 
 		<div class="blank"></div>
 		<main>
-			<section class="quote-area">
+			<section class="quote-area up-on-scroll">
+
+			</section>
+			<section class="quote-area up-on-scroll">
 				<h2 class="quote-title">
 					Done💽
 				</h2>
@@ -35,7 +52,7 @@
 				</article>
 			</section>
 
-			<section  class="quote-area">
+			<section  class="quote-area up-on-scroll">
 				<h2 class="quote-title">
 					Being💿
 				</h2>
@@ -47,7 +64,7 @@
 				</article>
 			</section>
 
-			<section class="quote-area">
+			<section class="quote-area up-on-scroll">
 				<h2 class="quote-title">
 					To Do⌨
 				</h2>
@@ -62,18 +79,8 @@
 		</main>
 		<footer class="to-home">
 			<a href="index.html" target="_self"><span>HOME</span></a>
+			<br>
+			<input class="night_btn" type="button" value="Night" onclick="nightDayHandler(this)">
 		</footer>
-
-		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js">
-			WebFont.load({ 
-					google: {
-					families: ['Droid Sans', 'Droid Serif']
-					},
-					custom: {
-						families: ['Nanum Gothic'],
-						urls: ['http://fonts.googleapis.com/earlyaccess/nanumgothic.css']
-					}  
-			});
-		</script>
 	</body>
 </html>
