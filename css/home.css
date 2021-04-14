@@ -90,6 +90,7 @@ vertical-align: sub;
 
 .the-home-images-area img {
 margin:0 auto; padding:0px; height:100%;
+position:relative;
 }
 
 .home-footnote {
