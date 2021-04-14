@@ -244,7 +244,7 @@ figure.expansion_effect {
   background: #000000;
   color: #ffffff;
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 100%;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
 }
@@ -281,6 +281,11 @@ figure.expansion_effect .heading {
   width: 100%;
 }
 
+figure.expansion_effect .heading span {
+  font-weight: 900;
+  font-size: 20px;
+}
+
 figure.expansion_effect h3 {
   display: table;
   margin: 0 auto;
@@ -289,7 +294,7 @@ figure.expansion_effect h3 {
   text-align: center;
   width: auto;
   text-transform: uppercase;
-  font-weight: 900;
+  font-weight: 500;
 }
 
 figure.expansion_effect h3:before,
